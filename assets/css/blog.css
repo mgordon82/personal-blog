@@ -1,0 +1,13 @@
+main {
+  width: 75%;
+  section {
+    p {
+      margin: 10px 0;
+    }
+    .posted-by {
+      font-size: 12px;
+      text-align: right;
+      margin: 0;
+    }
+  }
+}
