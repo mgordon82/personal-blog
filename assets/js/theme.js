@@ -8,20 +8,22 @@ themeSwitcher.addEventListener('click', function () {
   // If mode is dark, apply light background
   if (mode === 'dark') {
     mode = 'light';
-    container.setAttribute('class', 'light');
+    container.classList.remove('dark');
+    container.classList.add('light');
     localStorage.setItem('mode', 'light');
   }
   // If mode is light, apply dark background
   else {
     mode = 'dark';
-    container.setAttribute('class', 'dark');
+    container.classList.remove('light');
+    container.classList.add('dark');
     localStorage.setItem('mode', 'dark');
   }
 });
 
 function init() {
   mode = localStorage.getItem('mode') || 'dark';
-  container.setAttribute('class', mode);
+  container.classList.add(mode);
 }
 
 init();

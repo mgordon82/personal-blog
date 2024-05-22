@@ -57,4 +57,12 @@ footer {
 .dark {
   background-color: #000;
   color: #fff;
+
+  &.blog section {
+    border-color: #008080;
+    box-shadow: 5px 5px 10px #008080;
+    &:nth-child(even) {
+      background-color: #333;
+    }
+  }
 }

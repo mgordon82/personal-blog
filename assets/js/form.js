@@ -1,6 +1,9 @@
 const nameInput = document.querySelector('#name');
+const nameSection = document.getElementById('name-section');
 const titleInput = document.querySelector('#title');
+const titleSection = document.getElementById('title-section');
 const contentInput = document.querySelector('#content');
+const contentSection = document.getElementById('content-section');
 const submitButton = document.querySelector('#submit');
 
 const postsArray = JSON.parse(localStorage.getItem('posts')) || [];
