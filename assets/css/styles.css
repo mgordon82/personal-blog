@@ -18,6 +18,8 @@ header {
   padding: 0 20px;
   height: 75px;
   border-bottom: 1px solid #ccc;
+  background-color: #008080;
+  color: #fff;
   h1 {
     font-size: 28px;
   }
@@ -31,6 +33,16 @@ header {
       &:last-child {
         margin-left: 80px;
       }
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &#themeSwitch {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -38,4 +50,11 @@ header {
 footer {
   margin-top: 20px;
   text-align: center;
+}
+
+/* Dark Mode Styles */
+
+.dark {
+  background-color: #000;
+  color: #fff;
 }

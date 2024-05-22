@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/form.css" />
   </head>
-  <body>
+  <body id="container">
     <header>
       <h1>Matt's Personal Blog</h1>
       <nav>
         <ul>
           <li><a href="blog.html">Blog Listings</a></li>
           <li>Contact</li>
-          <li>Light Mode</li>
+          <li id="themeSwitch">Mode</li>
         </ul>
       </nav>
     </header>
@@ -31,12 +31,13 @@
         </section>
         <section>
           <label for="content">Content</label>
-          <input type="text" id="content" name="content" />
+          <textarea type="text" id="content" name="content" rows="5"></textarea>
         </section>
         <button id="submit">Submit</button>
       </form>
     </main>
     <footer>&copy;2024 Matt Gordon. All Rights Reserved.</footer>
     <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/theme.js"></script>
   </body>
 </html>

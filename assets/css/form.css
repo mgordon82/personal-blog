@@ -18,7 +18,8 @@ main {
       display: flex;
       flex-direction: column;
       margin: 10px 0;
-      input {
+      input,
+      textarea {
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -26,9 +27,11 @@ main {
     }
     button {
       padding: 5px 0;
-      background-color: #99cc;
+      background-color: #008080;
+      color: #fff;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
     }
   }
 }

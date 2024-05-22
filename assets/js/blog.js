@@ -1,9 +1,6 @@
 const blogBlock = document.getElementById('blogPosts');
-let posts = [];
 
-console.log('block', blogBlock);
-
-function buildBlogView() {
+function buildBlogView(posts) {
   if (posts.length > 0) {
     for (let i = 0; i < posts.length; i++) {
       const post = posts[i];
@@ -20,15 +17,8 @@ function init() {
   // Get posts from localStorage
   const postsArray = JSON.parse(localStorage.getItem('posts')) || [];
 
-  // Check if the posts exists and add them to the postsArray if there
-  if (postsArray !== null) {
-    posts = postsArray;
-  }
-
   // call the function to build the blog view
-  buildBlogView();
+  buildBlogView(postsArray);
 }
 
 init();
-
-console.log('here are some blog posts', posts);
