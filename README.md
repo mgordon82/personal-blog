@@ -50,3 +50,8 @@ THEN I am presented with a link to the developer's portfolio.
 ![Screenshot of the form in dark mode.](./assets/img/blogForm.png)
 
 ![Screenshot of the blog posts in dark mode.](./assets/img/blogListings.png)
+
+## Links to Code and Live Site
+
+- The project is viewable on [Github Pages](https://mgordon82.github.io/personal-blog/)
+- The repository for this code is located on [GitHub](https://github.com/mgordon82/personal-blog)
