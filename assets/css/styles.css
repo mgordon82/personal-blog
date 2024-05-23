@@ -42,6 +42,10 @@ header {
       }
       &#themeSwitch {
         cursor: pointer;
+        &::before {
+          content: '🌞';
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -64,5 +68,8 @@ footer {
     &:nth-child(even) {
       background-color: #333;
     }
+  }
+  #themeSwitch::before {
+    content: '🌙';
   }
 }
