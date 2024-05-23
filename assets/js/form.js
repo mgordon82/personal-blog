@@ -29,7 +29,7 @@ submitButton.addEventListener('click', function (event) {
     localStorage.setItem('posts', JSON.stringify(postsArray));
 
     // navigate to blog page after submit
-    window.location.href = '/blog.html';
+    window.location.href = 'blog.html';
   } else {
     errorElement.appendChild(errorText);
     blogForm.insertBefore(errorElement, submitButton);
